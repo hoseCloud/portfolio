@@ -1,6 +1,6 @@
 function Header() {
   return (
-    <div className="Header">
+    <div id="Header">
       <nav className="bg-gradient-to-r from-gray-800 to-black p-3 flex justify-start">
         <h1 className="text-blue-500 p-3 font-bold text-lg">hoseCloud</h1>
         <a href="#Introduction" className="text-gray-300 p-3 font-bold">
