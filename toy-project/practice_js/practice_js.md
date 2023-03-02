@@ -1,4 +1,4 @@
-# Practice JS for me
+# [practice_js](https://github.com/hoseCloud/practice_js)
 
 JavaScript 연습을 위한 개인 저장소입니다.  
 여기 [링크](https://hosecloud.github.io/practice_js/)가 있습니다.
