@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import { PropTypes } from "prop-types";
 
 function ContactCard({ where, image, name, url }) {
@@ -33,12 +34,18 @@ ContactCard.prototype = {
 export { ContactCard };
 
 function ContactCopyCard({ where, image, name, text }) {
+  const [showPopup, setShowPopup] = useState(false);
+
   async function handleClick() {
     try {
       await navigator.clipboard.writeText(text);
     } catch (err) {
       console.error("Failed to copy text: ", err);
     }
+    setShowPopup(true);
+    setTimeout(() => {
+      setShowPopup(false);
+    }, 3000);
   }
 
   return (
@@ -57,6 +64,11 @@ function ContactCopyCard({ where, image, name, text }) {
           >
             Copy {where} Email
           </button>
+          {showPopup && (
+            <div className="absolute top-10 right-0 bg-white shadow-md p-4 rounded">
+              <p>Copy successful!</p>
+            </div>
+          )}
         </div>
       </div>
     </div>
