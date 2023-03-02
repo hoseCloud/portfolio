@@ -1,7 +1,8 @@
 # [practice_flutter](https://github.com/hoseCloud/practice_flutter)
 
-Flutter 연습을 위한 개인 저장소입니다.
+모바일에서 동작하는 웹툰 뷰어입니다.
 
+Flutter 연습을 위한 개인 저장소입니다.  
 그리고 [강의(dart)](https://nomadcoders.co/dart-for-beginners/lobby)와 [강의(flutter)](https://nomadcoders.co/flutter-for-beginners/lobby)를 제공해준 **nomad coders**에게 감사합니다!
 
 <img src="home_screen_screenshot.png" height="480" alt="home_screen_screenshot" />
