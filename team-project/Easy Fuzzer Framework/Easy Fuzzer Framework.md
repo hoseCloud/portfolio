@@ -1,6 +1,6 @@
 # [Easy Fuzzer Framework](https://github.com/g3un/easy-fuzzer-framework)
 
-**퍼저를 사용하기 쉽게 GUI로 구현**할 수 있는 프레임워크다.  
+**퍼저를 사용하기 쉽게 GUI로 구현**할 수 있는 프레임워크입니다.  
 사용하기 어려운 퍼저를 쉽게 사용할 수 있다는 의미의 이름이다.  
 대학생 4학년 2학기 소프트웨어 프로젝트2 팀프로젝트 입니다.
 
