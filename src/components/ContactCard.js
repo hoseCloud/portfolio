@@ -45,7 +45,7 @@ function ContactCopyCard({ where, image, name, text }) {
     setShowPopup(true);
     setTimeout(() => {
       setShowPopup(false);
-    }, 3000);
+    }, 1500);
   }
 
   return (
@@ -57,15 +57,15 @@ function ContactCopyCard({ where, image, name, text }) {
       />
       <div className="ml-6">
         <h2 className="text-gray-800 font-bold text-xl mb-2">{name}</h2>
-        <div className="mt-4">
+        <div className="mt-4 relative">
           <button
-            className="bg-gray-900 text-white py-2 px-4 rounded-md hover:bg-gray-800"
+            className="bg-gray-900 text-white py-2 px-4 rounded-md hover:bg-gray-800 relative z-10"
             onClick={handleClick}
           >
             Copy {where} Email
           </button>
           {showPopup && (
-            <div className="absolute top-20 right-0 bg-white shadow-md p-4 rounded">
+            <div className="absolute top-10 right-0 bg-white shadow-md p-4 rounded z-20">
               <p>Copy successful!</p>
             </div>
           )}
