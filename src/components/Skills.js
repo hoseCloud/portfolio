@@ -1,7 +1,8 @@
 function Skills() {
   return (
     <div id="Skills">
-      <div className="flex flex-wrap m-2 space-x-1">
+      <div className="flex flex-wrap m-2 space-x-1 space-y-1">
+        <img alt=""></img>
         <img
           src="https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white"
           alt="C badge"
