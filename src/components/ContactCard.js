@@ -65,7 +65,7 @@ function ContactCopyCard({ where, image, name, text }) {
             Copy {where} Email
           </button>
           {showPopup && (
-            <div className="absolute top-10 right-0 bg-white shadow-md p-4 rounded">
+            <div className="absolute top-20 right-0 bg-white shadow-md p-4 rounded">
               <p>Copy successful!</p>
             </div>
           )}
