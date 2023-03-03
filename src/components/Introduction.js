@@ -17,7 +17,7 @@ function Introduction() {
           </p>
         </div>
       </div>
-      <div className="grid grid-flow-col auto-cols-max gap-4 px-4">
+      <div className="flex flex-wrap m-2 space-x-1 gap-4 px-4">
         <ContactCard
           where="Github"
           image="https://avatars.githubusercontent.com/u/102496441?v=4"
