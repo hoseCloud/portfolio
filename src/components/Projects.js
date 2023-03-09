@@ -50,6 +50,12 @@ function Projects() {
           imgUrl="https://raw.githubusercontent.com/hoseCloud/portfolio/project.md/toy-project/practice_reactJS/home.png"
           projectUrl="https://github.com/hoseCloud/portfolio/blob/project.md/toy-project/practice_reactJS/practice_reactJS.md"
         />
+        <ProjectCard
+          title="portfolio"
+          description="hoseCloud(허세정)의 포트폴리오 웹페이지입니다."
+          imgUrl="https://raw.githubusercontent.com/hoseCloud/portfolio/project.md/toy-project/portfolio/main_page.png"
+          projectUrl="https://github.com/hoseCloud/portfolio/blob/project.md/toy-project/portfolio/portfolio.md"
+        />
       </div>
     </div>
   );
