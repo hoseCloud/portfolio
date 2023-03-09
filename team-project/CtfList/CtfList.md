@@ -1,4 +1,4 @@
-# [CtfList](https://github.com/hoseCloud/sp2-term)
+# [CtfList](https://github.com/g3un/sp2-term)
 
 **모바일로 Ctf 목록들을 쉽게 확인하고 일정을 관리**할 수 있는 애플리케이션입니다.  
 CTF 일정을 List 형식으로 보여주기 때문에 CtfList입니다.  
@@ -16,7 +16,9 @@ CTF 일정을 List 형식으로 보여주기 때문에 CtfList입니다.
 ## 구현 방법
 
 1. CTF 목록을 [ctftime.org](https://ctftime.org/) API를 이용해 얻음
-2. 얻은 데이터를 가공해 화면에 출력
+2. 얻은 데이터를 가공해 DB에 저장 후 화면에 출력
+
+<img src="ERD.png" height="720" alt="ERD" />
 
 ## 팀원
 
