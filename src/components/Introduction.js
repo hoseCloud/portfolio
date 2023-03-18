@@ -1,13 +1,15 @@
 import { ContactCard, ContactCopyCard } from "./ContactCard";
+import imgPath from "../assets/wallpaper.jpg";
 
 function Introduction() {
-  const bgUrl =
-    "https://img.freepik.com/free-photo/coffee-cup-table_23-2148164788.jpg?w=1380&t=st=1677746522~exp=1677747122~hmac=4062d60938d8749b024bc3b02bea33e089f3a7f7b3699d82e94590491af09cae";
-
   return (
     <div id="Introduction">
       <div className="relative pb-4">
-        <img src={bgUrl} alt="" className="w-full h-96 object-cover blur-sm" />
+        <img
+          src={imgPath}
+          alt=""
+          className="w-full h-96 object-cover blur-sm"
+        />
         <div className="absolute inset-0 flex flex-col justify-center items-center">
           <p className="text-white text-7xl font-bold text-center pb-6">
             허세정
