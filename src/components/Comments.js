@@ -16,7 +16,10 @@ function Comments() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center p-4 mt-4 bg-gray-200 rounded-lg shadow-md">
+    <div
+      id="Comments"
+      className="flex flex-col items-center justify-center p-4 mt-4 bg-gray-200 rounded-lg shadow-md"
+    >
       <h1 className="text-4xl font-bold text-center py-4" ref={paragraphRef}>
         Comments
       </h1>
