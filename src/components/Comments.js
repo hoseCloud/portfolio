@@ -1,5 +1,6 @@
 import React, { useState, useRef } from "react";
 import DuolingoCard from "./DuolingoCard";
+import goal2023 from "../data/goal2023.json";
 
 function Comments() {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,10 +22,10 @@ function Comments() {
       id="Comments"
       className="flex flex-col items-center justify-center p-4 mt-4 bg-gray-200 rounded-lg shadow-md"
     >
-      <h1 className="text-4xl font-bold text-center py-4" ref={paragraphRef}>
+      <p className="text-4xl font-bold text-center py-4" ref={paragraphRef}>
         Comments
-      </h1>
-      <h2 className="text-2xl font-bold text-center py-2">About ME === TMI</h2>
+      </p>
+      <p className="text-2xl font-bold text-center py-2">About ME === TMI</p>
       <button
         className="px-4 py-2 bg-blue-500 text-white rounded-lg shadow-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-opacity-50 my-4"
         onClick={toggle}
@@ -34,7 +35,16 @@ function Comments() {
       {isOpen && (
         <div>
           <DuolingoCard name="HoseCloud" id="795379412" />
-          <p className="text-lg">23년 목표</p>
+          <div className="flex-row bg-white rounded-lg p-6 m-10">
+            <p className=" text-center text-3xl font-bold mb-3">2023년 목표</p>
+            {goal2023.map((data) => (
+              <div>
+                <p className="text-lg">
+                  {data.check ? "✔" : "❌"} {data.title}
+                </p>
+              </div>
+            ))}
+          </div>
           <p className="text-lg">진행중인 프로젝트</p>
           <p className="text-lg">중단된 프로젝트</p>
         </div>

@@ -1,0 +1,30 @@
+[
+    {
+        "title" : "Flutter 프로젝트 1개 완료",
+        "check" : false
+    },
+    {
+        "title": "cpp 프로젝트 1개 완료",
+        "check" : false
+    },
+    {
+        "title": "portfolio 완료",
+        "check" : false
+    },
+    {
+        "title": "팔굽혀펴기/스쿼트 100/100 달성",
+        "check" : false
+    },
+    {
+        "title": "듀오링고 연속일 유지",
+        "check" : false
+    },
+    {
+        "title": "Rust 배우기",
+        "check" : false
+    },
+    {
+        "title": "윈도우·리눅스 배우기",
+        "check" : false
+    }
+]
