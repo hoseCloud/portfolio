@@ -14,8 +14,10 @@ function Comments() {
 
     setTimeout(() => {
       paragraphRef?.current.scrollIntoView({
-        behavior: "smooth",
         block: "start",
+      });
+      window.scrollBy({
+        top: -110,
       });
     }, 0);
   };
