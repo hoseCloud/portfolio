@@ -1,4 +1,5 @@
 import React, { useState, useRef } from "react";
+import DuolingoCard from "./DuolingoCard";
 
 function Comments() {
   const [isOpen, setIsOpen] = useState(false);
@@ -32,7 +33,7 @@ function Comments() {
       </button>
       {isOpen && (
         <div>
-          <p className="text-lg">듀오링고</p>
+          <DuolingoCard name="HoseCloud" id="795379412" />
           <p className="text-lg">23년 목표</p>
           <p className="text-lg">진행중인 프로젝트</p>
           <p className="text-lg">중단된 프로젝트</p>
