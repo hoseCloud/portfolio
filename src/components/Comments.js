@@ -1,6 +1,9 @@
 import React, { useState, useRef } from "react";
 import DuolingoCard from "./DuolingoCard";
+import ProjectCard from "./ProjectCard";
 import goal2023 from "../data/goal2023.json";
+import ongoing_project from "../data/ongoing_projects.json";
+import dead_project from "../data/dead_projects.json";
 
 function Comments() {
   const [isOpen, setIsOpen] = useState(false);
@@ -45,8 +48,40 @@ function Comments() {
               </div>
             ))}
           </div>
-          <p className="text-lg">진행중인 프로젝트</p>
-          <p className="text-lg">중단된 프로젝트</p>
+          <div className="flex-row bg-white rounded-lg p-6 m-10">
+            <p className="text-center text-3xl font-bold mb-3">
+              진행중인 프로젝트
+            </p>
+            <div className="flex flex-wrap m-2 space-x-1">
+              {ongoing_project.map((data) => (
+                <div>
+                  <ProjectCard
+                    title={data.title}
+                    description={data.description}
+                    imgUrl={data.imgUrl}
+                    projectUrl={data.projectUrl}
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+          <div className="flex-row bg-white rounded-lg p-6 m-10">
+            <p className="text-center text-3xl font-bold mb-3">
+              중단된 프로젝트
+            </p>
+            <div className="flex flex-wrap m-2 space-x-1">
+              {dead_project.map((data) => (
+                <div>
+                  <ProjectCard
+                    title={data.title}
+                    description={data.description}
+                    imgUrl={data.imgUrl}
+                    projectUrl={data.projectUrl}
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       )}
     </div>
