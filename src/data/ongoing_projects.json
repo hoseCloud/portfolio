@@ -1,0 +1,14 @@
+[
+    {
+        "title" : "fast_dutch",
+        "description" : "더치페이를 깔끔하게 해주는 애플리케이션",
+        "imgUrl" : "https://raw.githubusercontent.com/hoseCloud/portfolio/project.md/ongoing-project/fast_dutch/fast_dutch.png",
+        "projectUrl" : "https://github.com/hoseCloud/portfolio/blob/project.md/ongoing-project/fast_dutch/fast_dutch.md"
+    },
+    {
+        "title" : "hanging",
+        "description" : "하루 습관을 만들 수 있게 도와주는 TODO 알림 애플리케이션",
+        "imgUrl" : "",
+        "projectUrl" : "https://github.com/hoseCloud/portfolio/blob/project.md/ongoing-project/hanging/hanging.md"
+    }
+]
