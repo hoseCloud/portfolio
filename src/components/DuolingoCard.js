@@ -29,7 +29,7 @@ function DuolingoCard({ name }) {
   }, []);
 
   return (
-    <div>
+    <div className="flex place-content-center m-2 space-x-1 gap-4 px-4">
       {profile === null ? (
         <Loading />
       ) : (

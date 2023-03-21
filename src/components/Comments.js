@@ -38,48 +38,55 @@ function Comments() {
       {isOpen && (
         <div>
           <DuolingoCard name="HoseCloud" id="795379412" />
-          <div className="flex-row bg-white rounded-lg p-6 m-10">
-            <p className=" text-center text-3xl font-bold mb-3">2023년 목표</p>
-            {goal2023.map((data) => (
-              <div>
-                <p className="text-lg">
+
+          <div className="flex place-content-center m-10">
+            <div className="flex-row bg-white rounded-lg p-6 text-center place-content-center">
+              <p className="text-3xl font-bold mb-3">2023년 목표</p>
+              {goal2023.map((data) => (
+                <p className="text-lg" key={data.title}>
                   {data.check ? "✔" : "❌"} {data.title}
                 </p>
-              </div>
-            ))}
-          </div>
-          <div className="flex-row bg-white rounded-lg p-6 m-10">
-            <p className="text-center text-3xl font-bold mb-3">
-              진행중인 프로젝트
-            </p>
-            <div className="flex flex-wrap m-2 space-x-1">
-              {ongoing_project.map((data) => (
-                <div>
-                  <ProjectCard
-                    title={data.title}
-                    description={data.description}
-                    imgUrl={data.imgUrl}
-                    projectUrl={data.projectUrl}
-                  />
-                </div>
               ))}
             </div>
           </div>
-          <div className="flex-row bg-white rounded-lg p-6 m-10">
-            <p className="text-center text-3xl font-bold mb-3">
-              중단된 프로젝트
-            </p>
-            <div className="flex flex-wrap m-2 space-x-1">
-              {dead_project.map((data) => (
-                <div>
-                  <ProjectCard
-                    title={data.title}
-                    description={data.description}
-                    imgUrl={data.imgUrl}
-                    projectUrl={data.projectUrl}
-                  />
-                </div>
-              ))}
+
+          <div className="flex place-content-center m-10">
+            <div className="flex-row bg-white rounded-lg p-6">
+              <p className="text-center text-3xl font-bold mb-3">
+                진행중인 프로젝트
+              </p>
+              <div className="flex flex-wrap m-2 space-x-1">
+                {ongoing_project.map((data) => (
+                  <div key={data.title}>
+                    <ProjectCard
+                      title={data.title}
+                      description={data.description}
+                      imgUrl={data.imgUrl}
+                      projectUrl={data.projectUrl}
+                    />
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          <div className="flex place-content-center m-10">
+            <div className="flex-row bg-white rounded-lg p-6">
+              <p className="text-center text-3xl font-bold mb-3">
+                중단된 프로젝트
+              </p>
+              <div className="flex flex-wrap m-2 space-x-1">
+                {dead_project.map((data) => (
+                  <div key={data.title}>
+                    <ProjectCard
+                      title={data.title}
+                      description={data.description}
+                      imgUrl={data.imgUrl}
+                      projectUrl={data.projectUrl}
+                    />
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>
